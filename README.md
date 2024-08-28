@@ -55,6 +55,17 @@ For Windows users, change the build command to the following:
 }
 ```
 
+||||||| parent of d8c1054 (Update README.md)
+For Windows users, change the build command to the following:
+
+```lua
+{
+  "yetone/avante.nvim",
+  event = "VeryLazy",
+  -- rest of the config
+}
+```
+
 > [!IMPORTANT]
 >
 > `avante.nvim` is currently only compatible with Neovim 0.10.0 or later. Please ensure that your Neovim version meets these requirements before proceeding.
@@ -187,34 +198,33 @@ Given its early stage, `avante.nvim` currently supports the following basic func
 
 The following key bindings are available for use with `avante.nvim`:
 
-| Key Binding | Description |
-|-------------|-------------|
-| <kbd>Leader</kbd><kbd>a</kbd><kbd>a</kbd> | show sidebar |
-| <kbd>Leader</kbd><kbd>a</kbd><kbd>r</kbd> | refresh sidebar |
-| <kbd>Leader</kbd><kbd>a</kbd><kbd>e</kbd> | edit selected blocks |
-| <kbd>c</kbd><kbd>o</kbd> | choose ours |
-| <kbd>c</kbd><kbd>t</kbd> | choose theirs |
-| <kbd>c</kbd><kbd>b</kbd> | choose both |
-| <kbd>c</kbd><kbd>0</kbd> | choose none |
-| <kbd>]</kbd><kbd>x</kbd> | move to previous conflict |
-| <kbd>[</kbd><kbd>x</kbd> | move to next conflict |
-| <kbd>[</kbd><kbd>[</kbd> | jump to previous codeblocks (results window) |
-| <kbd>]</kbd><kbd>]</kbd> | jump to next codeblocks (results windows) |
+| Key Binding                               | Description                                  |
+| ----------------------------------------- | -------------------------------------------- |
+| <kbd>Leader</kbd><kbd>a</kbd><kbd>a</kbd> | show sidebar                                 |
+| <kbd>Leader</kbd><kbd>a</kbd><kbd>r</kbd> | refresh sidebar                              |
+| <kbd>Leader</kbd><kbd>a</kbd><kbd>e</kbd> | edit selected blocks                         |
+| <kbd>c</kbd><kbd>o</kbd>                  | choose ours                                  |
+| <kbd>c</kbd><kbd>t</kbd>                  | choose theirs                                |
+| <kbd>c</kbd><kbd>b</kbd>                  | choose both                                  |
+| <kbd>c</kbd><kbd>0</kbd>                  | choose none                                  |
+| <kbd>]</kbd><kbd>x</kbd>                  | move to previous conflict                    |
+| <kbd>[</kbd><kbd>x</kbd>                  | move to next conflict                        |
+| <kbd>[</kbd><kbd>[</kbd>                  | jump to previous codeblocks (results window) |
+| <kbd>]</kbd><kbd>]</kbd>                  | jump to next codeblocks (results windows)    |
 
 ## Highlight Groups
 
-
-| Highlight Group | Description | Notes |
-|-----------------|-------------|-------|
-| AvanteTitle | Title | |
-| AvanteReversedTitle | Used for rounded border | |
-| AvanteSubtitle | Selected code title | |
-| AvanteReversedSubtitle | Used for rounded border | |
-| AvanteThirdTitle | Prompt title | |
-| AvanteReversedThirdTitle | Used for rounded border | |
-| AvanteConflictCurrent | Current conflict highlight | Default to `Config.highlights.diff.current` |
-| AvanteConflictIncoming | Incoming conflict highlight | Default to `Config.highlights.diff.incoming` |
-| AvanteConflictCurrentLabel | Current conflict label highlight | Default to shade of `AvanteConflictCurrent` |
+| Highlight Group             | Description                       | Notes                                        |
+| --------------------------- | --------------------------------- | -------------------------------------------- |
+| AvanteTitle                 | Title                             |                                              |
+| AvanteReversedTitle         | Used for rounded border           |                                              |
+| AvanteSubtitle              | Selected code title               |                                              |
+| AvanteReversedSubtitle      | Used for rounded border           |                                              |
+| AvanteThirdTitle            | Prompt title                      |                                              |
+| AvanteReversedThirdTitle    | Used for rounded border           |                                              |
+| AvanteConflictCurrent       | Current conflict highlight        | Default to `Config.highlights.diff.current`  |
+| AvanteConflictIncoming      | Incoming conflict highlight       | Default to `Config.highlights.diff.incoming` |
+| AvanteConflictCurrentLabel  | Current conflict label highlight  | Default to shade of `AvanteConflictCurrent`  |
 | AvanteConflictIncomingLabel | Incoming conflict label highlight | Default to shade of `AvanteConflictIncoming` |
 
 See [highlights.lua](./lua/avante/highlights.lua) for more information
@@ -245,9 +255,9 @@ See [wiki](https://github.com/yetone/avante.nvim/wiki) for more recipes and tric
 
 We would like to express our heartfelt gratitude to the contributors of the following open-source projects, whose code has provided invaluable inspiration and reference for the development of avante.nvim:
 
-| Nvim Plugin | Functionality | Where did we use |
-| --- | --- | --- |
-| [git-conflict.nvim](https://github.com/akinsho/git-conflict.nvim) | Diff comparison functionality | https://github.com/yetone/avante.nvim/blob/main/lua/avante/diff.lua |
+| Nvim Plugin                                                           | Functionality                   | Where did we use                                                                 |
+| --------------------------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------- |
+| [git-conflict.nvim](https://github.com/akinsho/git-conflict.nvim)     | Diff comparison functionality   | https://github.com/yetone/avante.nvim/blob/main/lua/avante/diff.lua              |
 | [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim) | Request logic for Copilot's API | https://github.com/yetone/avante.nvim/blob/main/lua/avante/providers/copilot.lua |
 
 The high quality and ingenuity of these projects' source code have been immensely beneficial throughout our development process. We extend our sincere thanks and respect to the authors and contributors of these projects. It is the selfless dedication of the open-source community that drives projects like avante.nvim forward.
