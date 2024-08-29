@@ -107,6 +107,7 @@ M.defaults = {
       theirs = "ct",
       none = "c0",
       both = "cb",
+      cursor = "cc",
       next = "]x",
       prev = "[x",
     },
