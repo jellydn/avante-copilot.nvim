@@ -21,7 +21,7 @@ Simple usage like this, please refer to the available options in the [yetone/ava
 }
 ```
 
-Working config with lazy.nvim:
+My working config with lazy.nvim:
 
 ```lua
 return {
@@ -72,6 +72,8 @@ return {
   },
 }
 ```
+
+[![Copilot](https://i.gyazo.com/abab6b0aa05cf559d136d2f5180ed2fa.gif)](https://gyazo.com/abab6b0aa05cf559d136d2f5180ed2fa)
 
 ## Show your support
 
