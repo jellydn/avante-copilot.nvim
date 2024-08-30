@@ -1,5 +1,5 @@
----@see https://github.com/B00TK1D/copilot-api/blob/main/api.py
-
+-- This file is licensed under GPLv3.
+-- Credits: https://github.com/CopilotC-Nvim/CopilotChat.nvim/
 local curl = require("plenary.curl")
 
 local Path = require("plenary.path")
